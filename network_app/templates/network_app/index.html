@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Builder</title>
+</head>
+<body>
+    <h1>Nodes</h1>
+    <ul>
+        {% for node in nodes %}
+            <li>{{ node.name }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Edges</h1>
+    <ul>
+        {% for edge in edges %}
+            <li>{{ edge.source.name }} -&gt; {{ edge.target.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
